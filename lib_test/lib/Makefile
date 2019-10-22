@@ -7,7 +7,7 @@ all:$(EXEC)
 $(EXEC):$(OBJS)
 	gcc -fPIC  -shared -o $@ $^  
 $(OBJS): %.o: %.c
-	gcc -fPIC -c $< -o $@
+	gcc -fPIC -shared  -c $< -o $@
 
 clean:
 	rm -rf ./*.o

@@ -9,12 +9,12 @@
 #include<stdio.h>
 #include <string.h>
 #include "testlib.h"
-
 void fun_test()
 {
     char str[100] = {0};
     char* p = NULL;
     my_strcpy(str, "ni hao", 7);
+    printf("the str is %s\n", str);
 }
 
 int main()
